@@ -1,11 +1,12 @@
+import CardBase from "../Common/Cards/CardBase";
+import StackedCard from "../Common/Cards/StackedCard";
 function Main() {
     return (
         <>
-            <main>
-                <h1 className="text-3xl font-bold text-blue-700">
-                    Hello world!
-
-                </h1>
+            <main className="bg-amber-800 w-full h-full ml-10 flex flex-row">
+                <CardBase />
+                <CardBase />
+                <CardBase />
             </main>
         </>
     )
