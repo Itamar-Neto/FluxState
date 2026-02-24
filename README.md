@@ -1,6 +1,9 @@
 # FluxState: Real-Time Telemetry Dashboard
 Dashboard de monitoramento de hardware em tempo real desenvolvido para demonstrar alta performance em interfaces reativas e manipulação de fluxos de dados assíncronos.
 
+--- 
+
+❗Projeto ainda em desenvolvimento❗
 ---
 📌 Sobre o Projeto
 
@@ -27,20 +30,11 @@ UX de Dados: Transforma números brutos em visualizações acionáveis com alert
 ---
 🛠️ Tecnologias Utilizadas
 
-React (v18+): Hooks avançados para gestão de ciclo de vida.
-Tailwind CSS: Estilização responsiva e suporte a Dark Mode.
-Chart.js / ApexCharts: Renderização de gráficos de alta performance.
-Lucide React: Iconografia técnica.
-Context API / Zustand: Para gerenciar o fluxo global de dados da telemetria.
-
----
-🧠 Desafios Técnicos & Soluções
-
-1. Gestão de Memória e "Data Bloat"
-Desafio: Adicionar dados ao estado infinitamente faria a aplicação travar em poucos minutos. Solução: Implementei a lógica de Circular Buffer. O dashboard mantém apenas os últimos 50-100 pontos de dados, descartando os antigos e mantendo o consumo de memória constante.
-
-2. Sincronização de Gráficos
-Desafio: Garantir que todos os gráficos atualizem no mesmo frame para evitar uma experiência visual "quebrada". Solução: Centralizei o intervalo de atualização em um único Provider, garantindo que todos os componentes consumidores recebam o novo pacote de dados simultaneamente.
+React (v18+): Hooks avançados para gestão de ciclo de vida. </br>
+Tailwind CSS: Estilização responsiva e suporte a Dark Mode.</br>
+Chart.js / ApexCharts: Renderização de gráficos de alta performance.</br>
+Lucide React: Iconografia técnica.</br>
+Context API / Zustand: Para gerenciar o fluxo global de dados da telemetria.</br>
 
 ---
 🚀 Como Executar o Projeto
